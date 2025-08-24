@@ -13,6 +13,8 @@ function App() {
         background: "url('/bgcoklat.jpeg') no-repeat center center fixed",
         backgroundSize: "cover",
         color: "white",
+        display: "flex",
+        flexDirection: "column",
       }}
     >
       {/* Header */}
@@ -35,11 +37,9 @@ function App() {
         >
           <div className="card main-card">
             <div className="profile-section">
-              {/* Foto Neon */}
               <div className="profile-photo">
                 <img src="/rampal.jpeg" alt="Foto Frido" />
               </div>
-
               <h2 className="title">Frido Avan Almuzaki</h2>
               <p className="subtitle">
                 Junggler Jago | Pemain Basket | Power Forward
@@ -109,7 +109,7 @@ function App() {
           transition={{ duration: 0.8 }}
         >
           <div className="card main-card">
-            <h2 className="title">Highlight Clip</h2>
+            <h2 className="title">Highlight Basket</h2>
             <div className="card section-card">
               <div className="video-container">
                 <video controls>
@@ -120,24 +120,36 @@ function App() {
               </div>
             </div>
           </div>
+
+          <div className="card main-card">
+            <h2 className="title">Highlight Gameplay ML</h2>
+            <div className="card section-card">
+              <div className="video-container">
+                <video controls>
+                  <source src="/mlsepeg.mp4" type="video/mp4" />
+                  Browser lo gak support video.
+                </video>
+              </div>
+            </div>
+          </div>
         </motion.div>
       )}
+
+      {/* Footer */}
+      <footer
+        style={{
+          textAlign: "center",
+          padding: "20px",
+          marginTop: "40px",
+          background: "rgba(0,0,0,0.6)",
+          fontSize: "14px",
+          borderTop: "1px solid rgba(255,255,255,0.2)",
+        }}
+      >
+        © {new Date().getFullYear()} Frido Avan Ambatukam. All Rights Reserved.
+      </footer>
     </div>
   );
 }
-
-{/* Footer */}
-<footer
-  style={{
-    textAlign: "center",
-    padding: "20px",
-    marginTop: "40px",
-    background: "rgba(0,0,0,0.6)",
-    fontSize: "14px",
-    borderTop: "1px solid rgba(255,255,255,0.2)",
-  }}
->
-  © {new Date().getFullYear()} Frido Avan Ambatukam. All Rights Reserved.
-</footer>
 
 export default App;
