@@ -125,4 +125,18 @@ function App() {
   );
 }
 
+{/* Footer */}
+<footer
+  style={{
+    textAlign: "center",
+    padding: "20px",
+    marginTop: "40px",
+    background: "rgba(0,0,0,0.6)",
+    fontSize: "14px",
+    borderTop: "1px solid rgba(255,255,255,0.2)",
+  }}
+>
+  © {new Date().getFullYear()} Frido Avan Almuzaki. All Rights Reserved.
+</footer>
+
 export default App;
