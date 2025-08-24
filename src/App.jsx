@@ -114,6 +114,7 @@ function App() {
               <div className="video-container">
                 <video controls>
                   <source src="/videobasket1.mp4" type="video/mp4" />
+                  <source src="/mlsepeg.mp4" type="video/mp4" />
                   Browser lo gak support video.
                 </video>
               </div>
@@ -136,7 +137,7 @@ function App() {
     borderTop: "1px solid rgba(255,255,255,0.2)",
   }}
 >
-  © {new Date().getFullYear()} Frido Avan Almuzaki. All Rights Reserved.
+  © {new Date().getFullYear()} Frido Avan Ambatukam. All Rights Reserved.
 </footer>
 
 export default App;
