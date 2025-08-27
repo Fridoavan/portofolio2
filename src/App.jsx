@@ -19,7 +19,7 @@ function App() {
     >
       {/* Header */}
       <header className="header">
-        <h1 className="logo">4LMUZAKY</h1>
+        <h1 className="logo">ALMUZAKY</h1>
         <nav className="nav">
           <button onClick={() => setPage("home")}>Home</button>
           <button onClick={() => setPage("clip")}>Clip</button>
